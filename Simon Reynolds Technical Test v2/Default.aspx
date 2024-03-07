@@ -98,16 +98,17 @@
 
             const heightValue = parseFloat(height.value);
 
-            if (name !== "" && age !== "" && !isNaN(age) && age < 110 && postCode !== "" && height !== "" && !isNaN(height)) {
+            if (name !== "" && name.length < 50 && age !== "" && !isNaN(age) && age
+
+
+        });
+ < 110 && postCode !== "" && height !== "" && height <= 2.50 && !isNaN(height)) {
                 document.getElementById("btnSubmitAdd").disabled = false;
 
             } else {
                 document.getElementById("btnSubmitAdd").disabled = true;
 
             }
-
-
-        });
 
     </script>
 </body>
