@@ -95,20 +95,14 @@
             var age = document.getElementById("txtAge").value.trim();
             var postCode = document.getElementById("txtPostCode").value.trim();
             var height = document.getElementById("txtHeight").value.trim();
-
             const heightValue = parseFloat(height.value);
 
-            if (name !== "" && name.length < 50 && age !== "" && !isNaN(age) && age
-
-
-        });
- < 110 && postCode !== "" && height !== "" && height <= 2.50 && !isNaN(height)) {
+            if (name !== "" && age !== "" && !isNaN(age) && age < 110 && postCode !== "" && height !== "" && !isNaN(height) && height < 2.5) {
                 document.getElementById("btnSubmitAdd").disabled = false;
-
             } else {
                 document.getElementById("btnSubmitAdd").disabled = true;
-
             }
+        });
 
     </script>
 </body>
